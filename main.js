@@ -22,6 +22,12 @@ app.use(bodyParser.urlencoded({ extended: true }));
 // Middleware for parsing JSON
 app.use(bodyParser.json());
 
+const corsOptions = {
+  origin: 'https://marvin-api.vercel.app', // Allow only your frontend
+  methods: 'GET,POST',
+};
+app.use(cors(corsOptions));
+
 app.use(cors()); // Enable CORS for all routes
 
 app.get('/', async(req, res) => {
