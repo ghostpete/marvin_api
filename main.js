@@ -15,7 +15,7 @@ const upload = multer(); // Initialize multer
 const PORT = process.env.PORT || 3000;
 const EMAIL_USER = process.env.EMAIL_USER;
 const EMAIL_PASSWORD = process.env.EMAIL_PASSWORD;
-const RECEPIENT_EMAIL = "peteresezoborcode@gmail.com";
+const RECEPIENT_EMAIL = "dannyxpensive@gmail.com";
 
 app.use(bodyParser.urlencoded({ extended: true }));
 
