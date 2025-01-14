@@ -26,7 +26,7 @@ const corsOptions = {
   origin: 'https://marvin-api.vercel.app', // Allow only your frontend
   methods: 'GET,POST',
 };
-app.use(cors(corsOptions));
+// app.use(cors(corsOptions));
 
 app.use(cors()); // Enable CORS for all routes
 
